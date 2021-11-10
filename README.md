@@ -1,1 +1,1 @@
-# arquitectura-aplicaciones
+# application-architecture
