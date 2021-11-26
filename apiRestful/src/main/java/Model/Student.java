@@ -2,6 +2,8 @@ package Model;
 
 /**
  * @author carloscastillo
+ * @author jhandrylopez
+ * author gersonsantos
  */
 public class Student{
 
