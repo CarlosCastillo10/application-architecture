@@ -16,14 +16,14 @@ import static spark.Spark.*;
 public class StudentService {
     public static void main(String[] args){
 
-        get("/students", (req, res) -> {
+        get("/students", "application/json", (req, res) -> {
            Gson gson = new Gson();
            res.type("application/json");
            return gson.toJson(DataRepository.getStudents());
         });
 
 
-        get("/students/filter", (req, res) -> {
+        get("/students/filter", "application/json", (req, res) -> {
             var key = req.queryParams().stream().toList().get(0);
             Gson gson = new Gson();
             res.type("application/json");
@@ -39,11 +39,12 @@ public class StudentService {
         });
 
 
-        get("/student/:pos", (req, res) -> {
+        get("/student/:pos", "application/json", (req, res) -> {
             var pos = Integer.parseInt(req.params(":pos"));
             Gson gson = new Gson();
             res.type("application/json");
             Student student = DataRepository.searchStudentByPos(pos);
+
             if(student != null){
                 res.status(200);
             }else{
@@ -53,7 +54,7 @@ public class StudentService {
         });
 
 
-        post("/student", (req, res) -> {
+        post("/student", "application/json", (req, res) -> {
             var dataStudent = req.body().toString();
             int position = DataRepository.addStudent(dataStudent);
             res.type("application/json");
@@ -68,7 +69,7 @@ public class StudentService {
         });
 
 
-        put("/student/:pos", (req, res) -> {
+        put("/student/:pos", "application/json", (req, res) -> {
             var pos = Integer.parseInt(req.params(":pos"));
             var dataStudent = req.body().toString();
             int position = DataRepository.putStudent(pos, dataStudent);
@@ -83,7 +84,7 @@ public class StudentService {
         });
 
 
-        delete("/student/:pos", (req, res) -> {
+        delete("/student/:pos", "application/json", (req, res) -> {
             try {
                 var pos = Integer.parseInt(req.params(":pos"));
                 DataRepository.deleteStudentByPos(pos);
