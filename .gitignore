@@ -109,3 +109,42 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+### PYTHON TEMPLATE
+# settings of vscode
+*.vscode/
+
+# settings pycache
+*.__pycache__/
+
+# settings pychar,
+*.idea/
+
+# pyc files
+*.pyc
+
+# tests and coverage
+*.pytest_cache
+.coverage
+
+# database & logs
+*.db
+*.sqlite3
+*.log
+*.sql
+
+# venv
+env
+venv
+
+# other
+.DS_Store
+
+# sphinx docs
+_build
+_static
+_templates
+
+# javascript
+package-lock.json
+.vscode/symbols.json
