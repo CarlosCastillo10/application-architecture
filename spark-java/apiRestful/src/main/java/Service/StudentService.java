@@ -65,7 +65,7 @@ public class StudentService {
                 halt(400);
             }
 
-            return "Location: https://88e4-190-110-60-131.ngrok.io/student/" + position;
+            return "Location: https://67ec-190-110-60-131.ngrok.io/student/" + position;
         });
 
 
