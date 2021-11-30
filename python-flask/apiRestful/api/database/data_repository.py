@@ -1,4 +1,4 @@
-from model.student import Student
+from api.model.student import Student
 
 
 class DataRepository:
