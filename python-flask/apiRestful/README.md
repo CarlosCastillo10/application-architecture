@@ -1,10 +1,6 @@
 # API RESTFUL
 ---
 
-## Requisitos previos:
-* Python
-
----
 ### Instalación ([Recomendable hacerlo en un entorno virtual](https://medium.com/@m.monroyc22/configurar-entorno-virtual-python-a860e820aace))
 * Ejecutar ```pip install --upgrade pip```
 * Ejecutar ```pip install -r requirements.txt```
