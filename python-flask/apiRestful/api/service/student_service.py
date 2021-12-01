@@ -46,7 +46,7 @@ def get_student_by_post(pos):
 def post_student():
     try:
         pos = data_repository.add_student(request.get_json())
-        return "Location: https://2394-190-110-60-131.ngrok.io/student/{}".format(pos), 201
+        return "Location: {}/{}".format(request.url, pos), 201
     except:
         abort(400)
 
