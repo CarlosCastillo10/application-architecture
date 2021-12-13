@@ -1,7 +1,7 @@
 # Segunda evaluación parcial del primer bimestre
 ---
 
-### Explicacion
+### Explicación del funcionamiento
 **Video:** [https://youtu.be/Xkvc2jEArm0](https://youtu.be/Xkvc2jEArm0)
 
 ### Instalación ([Recomendable hacerlo en un entorno virtual](https://medium.com/@m.monroyc22/configurar-entorno-virtual-python-a860e820aace))
