@@ -131,6 +131,7 @@ fabric.properties
 *.db
 *.sqlite3
 *.log
+*.sql
 
 # venv
 env
