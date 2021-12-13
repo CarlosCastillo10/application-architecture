@@ -12,8 +12,8 @@ data_repository = DataRepository()
 def index():
     return "Bienvenido"
 
-
 @blueprint.route('/students', methods=['GET'])
+
 @produces('application/json')
 def get_students():
     students = data_repository.get_all_student()
