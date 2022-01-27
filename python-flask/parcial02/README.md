@@ -1,12 +1,16 @@
 # Segunda evaluación parcial del primer bimestre
 ---
 
-### Explicacion
-**Video:** [https://youtu.be/Xkvc2jEArm0](https://youtu.be/Xkvc2jEArm0)
+### Explicación del funcionamiento
+[![YouTube](https://img.shields.io/badge/YouTube-c00?logo=YouTube)](https://youtu.be/Xkvc2jEArm0)
 
 ### Instalación ([Recomendable hacerlo en un entorno virtual](https://medium.com/@m.monroyc22/configurar-entorno-virtual-python-a860e820aace))
 * Ejecutar ```pip install --upgrade pip```
 * Ejecutar ```pip install -r requirements.txt```
+* Ejecutar en el motor de base de datos MySQL el archivo: [parcial02-script.sql](https://github.com/CarlosCastillo10/application-architecture/blob/main/python-flask/parcial02/parcial02-script.sql)
+<p align="center">
+<img src='https://github.com/CarlosCastillo10/application-architecture/blob/main/python-flask/parcial02/utpl-sqlmodel.png' alt='DB Model' title='Relational Model' height='400'>
+</p>
 
 ---
 ### Ejecución
